@@ -1,0 +1,22 @@
+<h1>Las series</h1>
+<%= form_with model: @serie, method: :post do |form| %>
+<div class="col-4">
+<div>
+<%= form.label :name, "nombre de la serie", class: "form-label" %>
+<%= form.text_field :name, class: "form-control" %>
+</div>
+<div>
+<%= form.label :synopsis, "Sinopsis de la serie", class: "form-label"
+%>
+<%= form.text_field :synopsis, class: "form-control" %>
+</div>
+<div>
+<%= form.label :director, "Director de la serie", class: "form-label"
+%>
+<%= form.text_field :director, class: "form-control" %>
+</div>
+<div>
+<%= form.submit "Enviar", class: "btn btn-primary" %>
+</div>
+</div>
+<% end %>

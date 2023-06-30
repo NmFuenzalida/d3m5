@@ -1,0 +1,7 @@
+<h1>Mostrando documentales</h1>
+
+<% @doc.each do |d| %>
+<h2><%= d.name %></h2>
+<p><%= d.synopsis %></p>
+<p><%= d.director %></p>
+<% end%>
